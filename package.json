@@ -1,0 +1,22 @@
+{
+  "name": "word-interpolator",
+  "version": "0.0.1",
+  "description": "a word2vec ditty",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "evin sellin",
+  "license": "MIT",
+  "dependencies": {
+    "qs": "^6.5.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "parcel-bundler": "^1.4.1"
+  }
+}
