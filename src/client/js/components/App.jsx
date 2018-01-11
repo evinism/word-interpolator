@@ -26,7 +26,6 @@ export default class App extends React.Component {
       w1: this.state.word1,
       w2: this.state.word2
     })).then(response => response.json()).then((data) => {
-      debugger;
       this.setState({
         result: JSON.stringify(data),
       })

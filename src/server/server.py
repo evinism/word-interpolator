@@ -1,10 +1,10 @@
 from flask import Flask, request, jsonify, abort, render_template, url_for
 from interpolate import interpolateWords
-app = Flask(__name__, static_url_path='/static')
+app = Flask(__name__, static_url_path='')
 
 @app.route("/")
 def root():
-    return render_template('index.html')
+    return app.send_static_file('build/index.html')
 
 @app.route("/query")
 def query():
