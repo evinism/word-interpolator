@@ -25,11 +25,13 @@ export default class App extends React.Component {
     fetch('/query?' + qs.stringify({
       w1: this.state.word1,
       w2: this.state.word2
-    })).then(response => response.json()).then((data) => {
+    }))
+    .then(response => response.json())
+    .then((data) => {
       this.setState({
         result: JSON.stringify(data),
       })
-    });
+    })
   };
 
   render(){
